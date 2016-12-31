@@ -121,21 +121,27 @@ header
 
 aside{
   float: right;
-  border: 1px solid black;
 	font-size: 14px;
   height: 100%;
+	color: #666;
   width: 200px;
   margin-left: 20px;
   padding: 25px 25px 25px 15px;
 	background-color: #F5F5F5;
 }
 
+aside a{
+	text-decoration: underline;
+	font-size: 10px;
+	color: #666;
+}
+
 section
 {
   padding: 30px 20px 30px 50px;
   margin: 20px auto;
-  border: 1px solid black; /*Need to  be removed later*/
-	box-shadow: 3px 3px 2px grey;
+	box-shadow: -1px 2px 2px #DCDCDC, 3px 3px 3px #DCDCDC;
+
 }
 
 .#main-content-wrapper:after{
@@ -215,6 +221,7 @@ input
 	margin-bottom: 25px;
 	border-radius: 2px;
 	border: 1px solid rgb(216,216,216);
+	padding: 5px 10px;
 }
 
 #submit
@@ -252,9 +259,16 @@ input[type="checkbox"]
 {
 	width: auto;
 	height: auto;
+	padding: 0;
 }
 
 input:last-of-type
 {
 	margin-bottom: 10px;
+}
+
+.right-margin-semantically-wrong
+{
+	width: 400px;
+	border-right: 1px solid #d3d3d3;
 }
