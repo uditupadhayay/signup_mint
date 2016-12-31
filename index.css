@@ -47,13 +47,31 @@ table {
 	border-spacing: 0;
 }
 
+
+/*Styling starts here*/
+
+a{
+  text-decoration: none;
+}
+html, body, section, aside
+{
+	height: 100%;
+	box-sizing: border-box;
+}
+
+#main-content-wrapper
+{
+	height: 86%;
+}
+
+h1, section, h2, aside, li, label, p
+{
+	font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
 section, header, footer
 {
   width: 700px;
-}
-
-input{
-  display: block;
 }
 
 #remember
@@ -63,33 +81,64 @@ input{
 
 footer
 {
+	padding: 35px 0 40px;
+	font-size: 14px;
   text-align: center;
   margin: 0 auto;
+	color: #a5a5a5;
+	margin-bottom: 40px;
+}
+
+footer p:last-of-type
+{
+	font-size: 11px;
+	margin-top: 30px
+}
+
+footer p:first-of-type
+{
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+footer p a{
+	text-decoration: none;
+	color: #a5a5a5;
+	padding: 0 20px;
+	border-right: 1px solid #a5a5a5;
+}
+
+footer p a:last-of-type
+{
+	border-right: none;
 }
 
 header
 {
-  margin-top: 80px;
-  margin: 0 auto;
+  margin: 60px auto 0;
+  vertical-align: baseline;
 }
 
 aside{
   float: right;
   border: 1px solid black;
+	font-size: 14px;
   height: 100%;
   width: 200px;
   margin-left: 20px;
   padding: 25px 25px 25px 15px;
+	background-color: #F5F5F5;
 }
 
 section
 {
-  padding: 30px 20px 50px 30px;
+  padding: 30px 20px 30px 50px;
   margin: 20px auto;
   border: 1px solid black; /*Need to  be removed later*/
+	box-shadow: 3px 3px 2px grey;
 }
 
-.main-content-wrapper::after{
+.#main-content-wrapper:after{
   clear: both;
   height: 0;
   display: block;
@@ -97,12 +146,115 @@ section
   content: "";
 }
 
-.main-content-wrapper
-{
-  position: relative;
-}
-
-header, input, footer, section, .main-content-wrapper, aside
+header, input, footer, section, #main-content-wrapper, aside, html, body
 {
   box-sizing: border-box;
+}
+
+header a{
+  color: rgb(51,51,51);
+  font-size: 15px;
+  right: 0;
+	display: inline-block;
+	position: relative;
+}
+
+header img
+{
+	display: inline-block;
+	position: relative;
+	vertical-align: text-bottom;
+}
+
+header p span
+{
+	position: relative;
+	left: 460px;
+}
+
+h2
+{
+  font-size: 20px;
+	margin-bottom: 10px;
+}
+
+h1
+{
+  font-size: 30px;
+	color: rgb(51,51,51);
+	margin-bottom: 40px;
+}
+
+.sign-up
+{
+  color: black;
+  padding: 0 10px;
+  font-weight: bold;
+  border-right: 1px solid #D3D3D3;
+}
+
+li
+{
+	list-style-type: disc;
+	margin-bottom: 13px;
+	margin-left: 20px;
+}
+
+label{
+	font-size: 14px;
+	color: rgb(51,51,51);
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+input
+{
+	display: block;
+	width: 320px;
+	height: 34px;
+	margin-bottom: 25px;
+	border-radius: 2px;
+	border: 1px solid rgb(216,216,216);
+}
+
+#submit
+{
+	padding: 10px 25px 10px 45px;
+	color: white;
+	width: auto;
+	height: auto;
+	background-color: #45CAE6;
+	background-image: url("images/signup_img.png");
+	background-repeat: no-repeat;
+	background-position: 25px 10px;
+	border: none;
+	text-transform: uppercase;;
+}
+
+#submit:hover
+{
+	cursor: pointer;
+}
+
+section p
+{
+	color: rgb(125,125,125);
+	font-size: 12px;
+}
+
+section p a
+{
+	text-decoration: none;
+	color: #45cae6;
+}
+
+input[type="checkbox"]
+{
+	width: auto;
+	height: auto;
+}
+
+input:last-of-type
+{
+	margin-bottom: 10px;
 }
